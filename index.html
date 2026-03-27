@@ -430,6 +430,7 @@
   <ul class="nav-links">
     <li><a href="#showcase">Bots</a></li>
     <li><a href="#pricing">Precios</a></li>
+    <li><a href="#pago">Pago & Garantía</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
   <a href="#contacto" class="nav-cta">Cotizar bot →</a>
@@ -521,77 +522,201 @@
 
 <!-- PRICING -->
 <section id="pricing">
+
+  <!-- BLOQUE 1: Desarrollo del bot (pago único) -->
   <div class="section-head reveal" style="text-align:center; max-width:100%;">
-    <div class="section-label">Planes de IA</div>
-    <h2 class="section-title">Elige tu plan</h2>
-    <p class="section-sub" style="margin:0 auto;">El módulo de Inteligencia Artificial funciona por suscripción mensual. Elige el plan que se adapte a tu servidor.</p>
+    <div class="section-label">Desarrollo del bot</div>
+    <h2 class="section-title">Pago único — sin mensualidad</h2>
+    <p class="section-sub" style="margin:0 auto;">El desarrollo de tu bot es un <strong style="color:var(--accent2);">pago único</strong>. Lo que pagas es por construir tu bot a medida. No es una suscripción.</p>
   </div>
 
-  <div class="pricing-grid">
+  <!-- Aviso importante -->
+  <div style="max-width:760px; margin:0 auto 3rem; background:rgba(47,128,237,.08); border:1px solid rgba(47,128,237,.25); border-radius:12px; padding:1.2rem 1.5rem;" class="reveal">
+    <p style="font-size:.95rem; color:var(--text); line-height:1.7;">
+      💡 <strong style="color:var(--accent2);">¿Cómo funciona el precio?</strong><br>
+      El costo depende de los módulos que quieras en tu bot. Contáctame con lo que necesitas y te preparo una cotización personalizada en minutos. El precio base de cualquier bot empieza en <strong style="color:var(--white);">$10 USD</strong> y sube según las funciones.
+    </p>
+  </div>
 
-    <!-- BÁSICO -->
+  <!-- Ejemplos de precios -->
+  <div class="pricing-grid" style="max-width:960px; margin:0 auto;">
+
     <div class="plan-card reveal reveal-delay-1">
-      <div class="plan-name">
-        <span class="plan-dot" style="background:#27ae60;"></span> Básico
-      </div>
+      <div class="plan-name"><span class="plan-dot" style="background:#27ae60;"></span> Bot Básico</div>
+      <div class="plan-price"><sup>$</sup>15<sub> USD</sub></div>
+      <div class="plan-mxn">Pago único · sin mensualidad</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>Moderación (warns, bans, mutes)</li>
+        <li>Comandos personalizados</li>
+        <li>Logs de actividad</li>
+        <li>Entrega en 2 horas aprox.</li>
+        <li>Soporte post-entrega</li>
+      </ul>
+      <a href="#contacto" class="plan-btn plan-btn-outline">Cotizar →</a>
+    </div>
+
+    <div class="plan-card featured reveal reveal-delay-2">
+      <div class="plan-name"><span class="plan-dot" style="background:#2f80ed;"></span> Bot Completo</div>
+      <div class="plan-price"><sup>$</sup>35<sub> USD</sub></div>
+      <div class="plan-mxn">Pago único · sin mensualidad</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>Moderación avanzada</li>
+        <li>Economía + tienda + ranking</li>
+        <li>Sistema de tickets</li>
+        <li>XP y niveles</li>
+        <li>Entrega en 3-4 horas aprox.</li>
+        <li>Soporte prioritario</li>
+      </ul>
+      <a href="#contacto" class="plan-btn plan-btn-fill">Cotizar →</a>
+    </div>
+
+    <div class="plan-card reveal reveal-delay-3">
+      <div class="plan-name"><span class="plan-dot" style="background:#eb5757;"></span> Bot Todo en Uno</div>
+      <div class="plan-price"><sup>$</sup>60<sub> USD+</sub></div>
+      <div class="plan-mxn">Pago único · cotización a medida</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>Todos los módulos disponibles</li>
+        <li>Música, social, seguridad</li>
+        <li>Integración con APIs externas</li>
+        <li>Panel de administración</li>
+        <li>Entrega en 5 horas aprox.</li>
+        <li>Soporte VIP</li>
+      </ul>
+      <a href="#contacto" class="plan-btn plan-btn-outline">Cotizar →</a>
+    </div>
+
+  </div>
+
+  <!-- BLOQUE 2: Suscripción IA (opcional) -->
+  <div class="section-head reveal" style="text-align:center; max-width:100%; margin-top:5rem;">
+    <div class="section-label">Módulo de IA — opcional</div>
+    <h2 class="section-title">¿Quieres IA en tu bot?</h2>
+    <p class="section-sub" style="margin:0 auto;">La Inteligencia Artificial es un módulo <strong style="color:var(--accent2);">completamente opcional</strong>. Si lo quieres, funciona por suscripción mensual ya que usa recursos externos con costo por uso. Tu bot funciona perfecto sin IA.</p>
+  </div>
+
+  <div class="pricing-grid" style="max-width:960px; margin:0 auto;">
+
+    <div class="plan-card reveal reveal-delay-1">
+      <div class="plan-name"><span class="plan-dot" style="background:#27ae60;"></span> IA Básica</div>
       <div class="plan-price"><sup>$</sup>5<sub> USD/mes</sub></div>
       <div class="plan-mxn">~ $90 MXN / mes</div>
       <hr class="plan-divider">
       <ul class="plan-features">
-        <li>Uso limitado de IA (hasta 150 msgs/día)</li>
+        <li>Hasta 150 mensajes IA por día</li>
         <li>Respuestas rápidas y funcionales</li>
-        <li>Modelo Haiku (eficiente)</li>
         <li>Ideal para comunidades pequeñas</li>
-        <li>Soporte por Discord</li>
+        <li>Se añade a cualquier bot existente</li>
       </ul>
-      <a href="#contacto" class="plan-btn plan-btn-outline">Comenzar →</a>
+      <a href="#contacto" class="plan-btn plan-btn-outline">Agregar IA →</a>
     </div>
 
-    <!-- PREMIUM -->
     <div class="plan-card featured reveal reveal-delay-2">
-      <div class="plan-name">
-        <span class="plan-dot" style="background:#2f80ed;"></span> Premium
-      </div>
+      <div class="plan-name"><span class="plan-dot" style="background:#2f80ed;"></span> IA Premium</div>
       <div class="plan-price"><sup>$</sup>12<sub> USD/mes</sub></div>
       <div class="plan-mxn">~ $210 MXN / mes</div>
       <hr class="plan-divider">
       <ul class="plan-features">
-        <li>Uso ampliado (hasta 400 msgs/día)</li>
-        <li>Mejor calidad de respuestas</li>
-        <li>Soporte para múltiples usuarios</li>
-        <li>Optimización de rendimiento</li>
+        <li>Hasta 400 mensajes IA por día</li>
+        <li>Mayor calidad de respuestas</li>
         <li>Historial de conversación</li>
+        <li>Soporte para varios usuarios activos</li>
         <li>Soporte prioritario</li>
       </ul>
-      <a href="#contacto" class="plan-btn plan-btn-fill">Comenzar →</a>
+      <a href="#contacto" class="plan-btn plan-btn-fill">Agregar IA →</a>
     </div>
 
-    <!-- PRO -->
     <div class="plan-card reveal reveal-delay-3">
-      <div class="plan-name">
-        <span class="plan-dot" style="background:#eb5757;"></span> Pro
-      </div>
+      <div class="plan-name"><span class="plan-dot" style="background:#eb5757;"></span> IA Pro</div>
       <div class="plan-price"><sup>$</sup>25<sub> USD/mes</sub></div>
       <div class="plan-mxn">~ $430 MXN / mes</div>
       <hr class="plan-divider">
       <ul class="plan-features">
-        <li>Uso intensivo (hasta 800 msgs/día)</li>
-        <li>Modelo Sonnet (mayor inteligencia)</li>
-        <li>Respuestas avanzadas y precisas</li>
-        <li>Prioridad en rendimiento</li>
+        <li>Hasta 800 mensajes IA por día</li>
+        <li>Modelo avanzado (mayor precisión)</li>
         <li>Configuración personalizada</li>
+        <li>Prioridad en rendimiento</li>
         <li>Soporte VIP</li>
       </ul>
-      <a href="#contacto" class="plan-btn plan-btn-outline">Comenzar →</a>
+      <a href="#contacto" class="plan-btn plan-btn-outline">Agregar IA →</a>
     </div>
 
   </div>
 
-  <!-- Créditos extra -->
-  <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+  <div style="text-align:center; margin-top:2rem;" class="reveal">
     <p style="color:var(--muted); font-size:.9rem;">
-      ⚡ ¿Necesitas más uso? También ofrezco <strong style="color:var(--accent2);">recargas de créditos</strong> bajo demanda — ideal para eventos o picos de actividad.
+      ⚡ ¿Picos de actividad? Ofrezco <strong style="color:var(--accent2);">recargas de créditos</strong> bajo demanda — pagas solo lo extra que necesites.
     </p>
+  </div>
+</section>
+
+<!-- PAGO Y GARANTÍA -->
+<section id="pago" style="background:var(--bg2);">
+  <div class="section-head reveal" style="text-align:center; max-width:100%;">
+    <div class="section-label">Transparencia total</div>
+    <h2 class="section-title">Pago & Garantía</h2>
+    <p class="section-sub" style="margin:0 auto;">Sin sorpresas, sin letra chica.</p>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; max-width:960px; margin:0 auto;">
+
+    <!-- Métodos de pago -->
+    <div class="bot-card reveal reveal-delay-1">
+      <div class="bot-icon">💳</div>
+      <div class="bot-name">Métodos de pago</div>
+      <div class="bot-desc" style="margin-bottom:1rem;">Acepto pagos internacionales de cualquier país sin problema.</div>
+      <div style="display:flex; flex-direction:column; gap:.6rem;">
+        <div style="background:rgba(47,128,237,.08); border:1px solid rgba(47,128,237,.2); border-radius:8px; padding:.8rem 1rem;">
+          <div style="font-weight:700; color:var(--white); font-size:.9rem; margin-bottom:.2rem;">USDT — Binance Pay</div>
+          <div style="font-size:.8rem; color:var(--muted);">Red: <strong style="color:var(--accent2);">TRC20</strong> · Sin comisiones · Recomendado</div>
+        </div>
+        <div style="background:rgba(47,128,237,.08); border:1px solid rgba(47,128,237,.2); border-radius:8px; padding:.8rem 1rem;">
+          <div style="font-weight:700; color:var(--white); font-size:.9rem; margin-bottom:.2rem;">PayPal</div>
+          <div style="font-size:.8rem; color:var(--muted);">Disponible para cualquier país · comisión del ~4%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cómo pagar -->
+    <div class="bot-card reveal reveal-delay-2">
+      <div class="bot-icon">📋</div>
+      <div class="bot-name">¿Cómo funciona?</div>
+      <div style="display:flex; flex-direction:column; gap:.7rem; margin-top:.5rem;">
+        <div style="display:flex; gap:.8rem; align-items:flex-start;">
+          <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:.75rem; font-weight:700; flex-shrink:0;">1</span>
+          <span style="font-size:.9rem; color:var(--muted);">Contáctame por Discord y cuéntame qué necesitas</span>
+        </div>
+        <div style="display:flex; gap:.8rem; align-items:flex-start;">
+          <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:.75rem; font-weight:700; flex-shrink:0;">2</span>
+          <span style="font-size:.9rem; color:var(--muted);">Te mando la cotización exacta en menos de 10 minutos</span>
+        </div>
+        <div style="display:flex; gap:.8rem; align-items:flex-start;">
+          <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:.75rem; font-weight:700; flex-shrink:0;">3</span>
+          <span style="font-size:.9rem; color:var(--muted);">Realizas el pago y me avisas — empiezo de inmediato</span>
+        </div>
+        <div style="display:flex; gap:.8rem; align-items:flex-start;">
+          <span style="background:var(--accent); color:#fff; border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:.75rem; font-weight:700; flex-shrink:0;">4</span>
+          <span style="font-size:.9rem; color:var(--muted);">Recibes tu bot en 2 a 5 horas según la complejidad</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Garantía -->
+    <div class="bot-card reveal reveal-delay-3" style="border-color:rgba(39,174,96,.3);">
+      <div class="bot-icon" style="background:linear-gradient(135deg,#27ae60,#2ecc71);">🛡️</div>
+      <div class="bot-name" style="color:#2ecc71;">Garantía de entrega</div>
+      <div class="bot-desc">Si no entrego tu bot en el plazo acordado tras confirmar tu pago, te devuelvo el <strong style="color:var(--white);">100% de tu dinero</strong> sin preguntas.</div>
+      <div style="margin-top:1rem; background:rgba(39,174,96,.08); border:1px solid rgba(39,174,96,.2); border-radius:8px; padding:.8rem 1rem;">
+        <div style="font-size:.82rem; color:var(--muted); line-height:1.6;">
+          ⏱️ Entrega en <strong style="color:var(--white);">2 a 5 horas</strong> tras confirmar pago<br>
+          ✅ El plazo comienza cuando <strong style="color:var(--white);">yo confirmo</strong> el pago<br>
+          💬 Avísame cuando pagues para empezar
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -620,11 +745,13 @@
       <div class="form-field">
         <label>Plan de interés</label>
         <select name="plan">
-          <option>Básico — $5 USD/mes</option>
-          <option selected>Premium — $12 USD/mes</option>
-          <option>Pro — $25 USD/mes</option>
-          <option>Bot personalizado completo</option>
-          <option>Cotización a medida</option>
+          <option>Bot Básico — desde $15 USD (pago único)</option>
+          <option selected>Bot Completo — desde $35 USD (pago único)</option>
+          <option>Bot Todo en Uno — desde $60 USD (pago único)</option>
+          <option>Agregar IA Básica — $5 USD/mes</option>
+          <option>Agregar IA Premium — $12 USD/mes</option>
+          <option>Agregar IA Pro — $25 USD/mes</option>
+          <option>Cotización personalizada</option>
         </select>
       </div>
       <div class="form-field">
