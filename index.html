@@ -1112,41 +1112,6 @@
   });
 
 
-  // ── THEME SWITCHER ──
-  const themes = [
-    { id: 'dark',  label: 'Oscuro',  swatch: 'swatch-dark'  },
-    { id: 'light', label: 'Blanco',  swatch: 'swatch-light' },
-    { id: 'blue',  label: 'Azul',    swatch: 'swatch-blue'  },
-    { id: 'red',   label: 'Rojo',    swatch: 'swatch-red'   },
-  ];
-
-  const savedTheme = localStorage.getItem('synapz-theme') || 'dark';
-  applyTheme(savedTheme);
-
-  function applyTheme(id) {
-    document.documentElement.setAttribute('data-theme', id === 'dark' ? '' : id);
-    if (id === 'dark') document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem('synapz-theme', id);
-    document.querySelectorAll('.theme-option').forEach(el => {
-      el.classList.toggle('active', el.dataset.theme === id);
-    });
-    document.querySelectorAll('.theme-toggle-btn').forEach(el => el.textContent = themes.find(t=>t.id===id)?.label[0] ?? '🎨');
-  }
-
-  const switcher = document.querySelector('.theme-switcher');
-  const panel    = switcher.querySelector('.theme-panel');
-  const mainBtn  = switcher.querySelector('.theme-toggle-btn');
-
-  mainBtn.addEventListener('click', () => panel.classList.toggle('open'));
-  document.addEventListener('click', e => { if (!switcher.contains(e.target)) panel.classList.remove('open'); });
-
-  document.querySelectorAll('.theme-option').forEach(opt => {
-    opt.addEventListener('click', () => {
-      applyTheme(opt.dataset.theme);
-      panel.classList.remove('open');
-    });
-  });
-
   window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     let current = '';
@@ -1175,6 +1140,57 @@
   </div>
   <button class="theme-toggle-btn" title="Cambiar tema">🎨</button>
 </div>
+
+<script>
+  // ── THEME SWITCHER ──
+  const themes = [
+    { id: 'dark',  label: 'Oscuro' },
+    { id: 'light', label: 'Blanco' },
+    { id: 'blue',  label: 'Azul'   },
+    { id: 'red',   label: 'Rojo'   },
+  ];
+
+  function applyTheme(id) {
+    if (id === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', id);
+    }
+    try { localStorage.setItem('synapz-theme', id); } catch(e){}
+    document.querySelectorAll('.theme-option').forEach(el => {
+      el.classList.toggle('active', el.dataset.theme === id);
+    });
+    const label = themes.find(t => t.id === id)?.label ?? '🎨';
+    document.querySelectorAll('.theme-toggle-btn').forEach(el => {
+      el.textContent = label[0];
+    });
+  }
+
+  const switcher = document.querySelector('.theme-switcher');
+  const panel    = switcher.querySelector('.theme-panel');
+  const mainBtn  = switcher.querySelector('.theme-toggle-btn');
+
+  mainBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    panel.classList.toggle('open');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!switcher.contains(e.target)) panel.classList.remove('open');
+  });
+
+  document.querySelectorAll('.theme-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      applyTheme(opt.dataset.theme);
+      panel.classList.remove('open');
+    });
+  });
+
+  // Load saved theme
+  let saved = 'dark';
+  try { saved = localStorage.getItem('synapz-theme') || 'dark'; } catch(e){}
+  applyTheme(saved);
+</script>
 
 </body>
 </html>
